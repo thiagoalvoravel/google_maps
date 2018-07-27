@@ -2,10 +2,11 @@
 <html>
 
     <head>
-        <meta charset="UTF-8"> 
+        <meta charset="UTF-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
-            $.getJSON('https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyBTbkwc406p8pDsJDgo_obWkokAL6fpWIQ', function(data) {
+            //$.getJSON('https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,Mountain%20View,CA&key=AIzaSyBTbkwc406p8pDsJDgo_obWkokAL6fpWIQ', function(data) {
+            $.getJSON('https://maps.googleapis.com/maps/api/geocode/json?address=156+rua+do+rouxinol,salvador,bahia,brasil&key=AIzaSyBTbkwc406p8pDsJDgo_obWkokAL6fpWIQ', function(data) {
                 var myJSON = JSON.stringify(data);
                 document.getElementById("teste").innerHTML = myJSON;
             });
